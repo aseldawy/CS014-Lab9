@@ -162,7 +162,7 @@ void testHashtable(Hashtable& hashtable, int n) {
 int main() {
     int sizes[] = {100, 1000, 10000};
     for (int hashtableSize : sizes) {
-        Hashtable hashtable(10);
+        Hashtable hashtable(hashtableSize);
         testHashtable(hashtable, hashtableSize);
         
     }
