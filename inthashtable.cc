@@ -104,7 +104,7 @@ public:
         unsigned int i = 0;
         unsigned int hi = h;
         while (status[hi] != EMPTY) {
-            if (buckets[hi] == OCCUPIED && buckets[hi] == key) {
+            if (status[hi] == OCCUPIED && buckets[hi] == key) {
                 // Key found, delete it.
                 status[hi] = DELETED;
                 return true;
